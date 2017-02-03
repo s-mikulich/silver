@@ -25,7 +25,7 @@ module.exports = {
   devtool: 'cheap-inline-module-source-map',
 
   plugins: [
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       NODE_ENV: JSON.stringify('development')
